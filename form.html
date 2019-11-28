@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+
+        <nav class="navbar">
+            <a href="#Home" target="_blank">HOME</a> |
+            <a href="https://www.geeksforgeeks.org/html-tutorials/" target="_blank">HTML</a> | 
+            <a href="https://www.geeksforgeeks.org/css-tutorials/" target="_blank">CSS</a> | 
+            <a href="https://www.geeksforgeeks.org/javascript-tutorial/" target="_blank">Javascript</a> | 
+            <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">Python</a> |
+            </a>
+            <div class="dropdown navbar">
+                    <button class="dropbtn">IM 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">HTML</a>
+                      <a href="#">CSS</a>
+                      <a href="#">PYTHON</a>
+                      <a href="#">Javascript</a>
+                    </div>
+                  </div> 
+        </nav>
+                
+        <header>
+            <h1>Html for basics.</h1>
+        
+        </header>
+
+        <div class="test"></div>
+        <div class="row">
+            <div class="column">
+                <img src="./images/1.jpeg" alt="first_image" style="width: 100%; height: 295px;">
+            </div>
+            <div class="column">
+                    <img src="./images/3.jpeg" alt="third_image" style="width: 100%; height: 295px;">
+            </div>
+            <div class="column">
+                <img src="./images/2.jpeg" alt="second_image" style="width: 100%; height: 295px;" >
+            </div>
+        </div>    
+  
+    <fieldset>
+        <legend class="legend">Application Form</legend>
+        <form>
+            <div>
+                <label for="firstname">FirstName:</label>
+                <input type="text" name="firstname" id="firstname"> 
+            </div>
+
+            <div>
+                    <label for="lastname">LasttName:</label>
+                    <input type="text" name="lastname" id="lastname">
+            </div>
+            <div>
+                <label for="age">AGE</label>
+                <input type="number" id="age" placeholder="Age" min="1" max="100">
+            </div>
+            <div>
+                    <label for="uname">Uname:</label>
+                    <input type="text" name="uname" id="uname" placeholder="Username">
+            </div>
+            <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+            </div>
+            <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required >
+            </div>
+            <div>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address">
+            </div>
+            <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" pattern=".{6,}" title="Six or more characters">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+
+            <div>
+                Gender
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender">
+            </div>
+            <div>
+                <label for="Female">Female</label>
+                <input type="radio" id="Female" name="gender">
+            </div>
+
+            <div>
+                <h4>Choose Nationality:</h4>
+                <select > 
+                    <option>--Select--</option>
+                    <option>Finland</option>
+                    <option>Estonia</option>
+                    <option>Sweeden</option>
+                    <option>Norway</option>
+                    <option>Italy</option>
+                    <option>Poland</option>
+                    <option>Latvia</option>
+                    <option>Greece</option>
+
+                    
+                </select>
+            </div>
+            <button type="submit">SUBMIT</button>
+            <Button type="reset">CLEAR</Button>
+
+        </form>
+    </fieldset>    
+
+
+</body>
+</html>
